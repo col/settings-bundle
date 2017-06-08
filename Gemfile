@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gemspec
 
+gem 'fastlane', path: '../fastlane'
 gem 'rspec-simplecov'
 gem 'simplecov'
 
