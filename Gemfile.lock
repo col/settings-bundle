@@ -1,5 +1,7 @@
-PATH
-  remote: ../fastlane
+GIT
+  remote: https://github.com/jdee/fastlane
+  revision: 223171406cfa376c523faf0c5b84a1129199e865
+  branch: commit-version-bump-bug
   specs:
     fastlane (2.37.0)
       CFPropertyList (>= 2.3, < 3.0.0)
