@@ -14,7 +14,7 @@ lane :test do
                          key: "BuildDate",
                          value: Time.now.strftime("%B %-d, %Y")
 
-  # Uncomment to commit these changes.
+  # Using the :include option
   commit_version_bump xcodeproj: xcodeproj, include: "examples/SettingsBundleExample/Settings.bundle/Root.plist"
 end
 
@@ -30,7 +30,7 @@ lane :group_test do
                          key: "BuildDate",
                          value: Time.now.strftime("%B %-d, %Y")
 
-  # Uncomment to commit these changes.
+  # Using the existing :settings option
   commit_version_bump xcodeproj: xcodeproj, settings: true
 end
 
@@ -51,6 +51,6 @@ lane :library_test do
   update_settings_bundle key: "BuildDate",
                          value: Time.now.strftime("%B %-d, %Y")
 
-  # Uncomment to commit these changes.
+  # Using the lane context (no :settings or :include option)
   commit_version_bump xcodeproj: xcodeproj
 end

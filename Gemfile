@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gemspec
 
-gem 'fastlane', git: 'https://github.com/jdee/fastlane', branch: 'commit-version-bump-bug'
+gem 'fastlane', git: 'https://github.com/jdee/fastlane', branch: 'commit-version-bump-enhancements'
 
 gem 'rspec-simplecov'
 gem 'simplecov'
